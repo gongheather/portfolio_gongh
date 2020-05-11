@@ -13,6 +13,9 @@
   Subtitle - Comfortaa
   Body - Enriqueta */
 /* Layout styling */
+.container {
+  padding: 0 15px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +31,9 @@ body {
   padding: 5px;
 }
 
-
+main {
+  padding-top:133px;
+}
 h1, h2, h3 {
   line-height: 1.4;
   margin: 0;
@@ -58,10 +63,16 @@ h3, h4 {
   padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
+  margin: 10px;
+  border-bottom: 3px solid white;
 }
 #header-logo {
   width: 50%;
   float: left;
+  padding: 0;
+}
+selector {
+  margin: 0 auto;
 }
 #header-intro {
   background-color: white;
@@ -124,6 +135,9 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: #994c30;
 }
+.row {
+  margin: 25px 0;
+}
 .button {
   display: inline-block;
   background-color: #03A696;
@@ -147,4 +161,29 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #F25D27;
   color: #ffffff !important;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #dbdbdb;
 }
