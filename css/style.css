@@ -1,0 +1,150 @@
+/* Colors
+  Background (white): white,#FFFFF;
+  Background accent (dark grey): #9099A1
+  Primary Color (Turquoise): #025159
+  Secondary Color 1 (Light Turquoise): #03A696
+  Secondary Color 2 (Dark Orange): #F28705
+  Secondary Color 3 (Light Orange): #F25D27
+  Secondary Color 2 (Red): #F20505
+  padding: top right bottom left;
+  */
+/* fonts used:
+  Heading - Sourse Sans Pro
+  Subtitle - Comfortaa
+  Body - Enriqueta */
+/* Layout styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color:#4a4a4a;
+  padding: 5px;
+}
+
+
+h1, h2, h3 {
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #025159;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #025159;
+
+}
+h3, h4 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #03A696;
+}
+
+#header {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#header-logo {
+  width: 50%;
+  float: left;
+}
+#header-intro {
+  background-color: white;
+  color: F28705;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+#main {
+  clear: both;
+  color: F28705;
+  text-align: left;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: 0 auto;
+}
+#main .img-responsive {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#skills {
+  padding:0;
+}
+#footer {
+  clear: both;
+  float: bottom;
+  width: 100%;
+  background-color: white;
+  color: ff7f50;
+  text-align: left;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.col-md-6 {
+  width: 50%;
+  position: relative;
+}
+
+img{
+  width: auto;
+  max-width:1000px;
+  height: auto;
+  max-height: 1000px;
+}
+a {
+  color: #white;
+  text-decoration: none;
+}
+a:hover {
+  color: #03A696;
+  text-decoration: underline;
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+.button {
+  display: inline-block;
+  background-color: #03A696;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 4px;
+  border-radius: 3px;
+  border-bottom: 2px solid #026e63;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #025159 !important;
+  text-transform: uppercase;
+  border: 2px solid #013c42;
+}
+.button.contact:hover {
+  background-color: #F25D27;
+  color: #ffffff !important;
+}

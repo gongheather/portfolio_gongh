@@ -3,15 +3,17 @@
 <!-- HEAD SECTION -->
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="author" content="HeatherGong">
   <meta name="description" content="UX Design Portfolio | Heather Gong">
-  <title>Heather Gong UX Designer San Francisco</title>
+  <title>About Heather Gong</title>
 </head>
-
-<!-- BODY SECTION -->
 <body>
-  <!-- HEADER SECTION -->
-  <header>
+  <div id="header">
     <div class="container">
       <img src="img/heather/hg.jpg" alt="Heather Gong">
     </div>
@@ -19,16 +21,18 @@
       <ul>
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About Me</a></li>
+        <li><a href="adventuredine.html">AdventureDine</a></li>
+        <li><a href="duovocab.html">DuoVocab</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <!-- MAIN SECTION -->
-<main>
-  <a href="heather_gong_resume.pdf" download>Download my Resume</a>
+<div id=main>
   <div>
     <div>
-      <h1>About</h1>
+      <h3>About Me</h3>
     </div>
   </div>
   <div>
@@ -38,13 +42,14 @@
         <div>
           <!--LEFT COLUMN-->
           <picture>
-            <source srcset="img/heather/heather@80.jpg" media="(max-width:767px)">
-            <img src="img/heather/heather@200.jpg" alt="Image">
+            <source srcset="img/heather/heather@80.jpg" media="(max-width:100px)">
+            <img src="img/heather/heather@200.jpg" class="img">
           </picture>
         </div>
         <div>
           <!--RIGHT COLUMN-->
-          <p>I design experiences and build systems for people, from online user communities to digital and physical spaces. With a background in Architecture and Architectural Engineering, I’m a systems thinker by nature and am passionate about solving complex problems through both a data-driven and human-centered approach. I thrive in environments where I can explore and and be agile, constantly learning from my peers, experiences, and readings while also contributing my insights. I believe in developing solutions, regardless of the source, that put people first to ensure every experience is as exceptional as it can be.</p>
+          <p>I design experiences and build systems for people, from online user communities to digital and physical spaces. With a background in Architecture and Architectural Engineering, I’m a systems thinker by nature and am passionate about solving complex problems through both a data-driven and human-centered approach.
+            <br><br>I thrive in environments where I can explore and and be agile, constantly learning from my peers, experiences, and readings while also contributing my insights. I believe in developing solutions, regardless of the source, that put people first to ensure every experience is as exceptional as it can be.</p>
         </div>
       </div>
       <!--END TOP COLUMN-->
@@ -57,13 +62,17 @@
             <li>Bachelors of Art in Architecture and Community Design, Minors in Architectural Engineering and Chinese Studies from the University of San Francisco</li>
             <li>CareerFoundry: User Experience Design and Front End Development</li>
           </ul>
-          <a href="files/heather_gong_resume.pdf" target="_blank">Resume</a>
+          <a href="files/heather_gong_resume.pdf" class="button">Download my Resume</a>
+
         </div>
         <div>
           <!--RIGHT COLUMN-->
+        <div id="skills">
           <h2>Skills and Tools</h2>
-          <div>
-            <h3>Software</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Software</h4>
             <ul>
               <li>Sketch</li>
               <li>Figma</li>
@@ -75,8 +84,8 @@
               <li>HTML, CSS, Javascript</li>
             </ul>
           </div>
-          <div>
-            <h3>Skills</h3>
+          <div class="col-md-6">
+            <h4>Skills</h4>
             <ul>
               <li>UX Design</li>
               <li>Qualitative User Research</li>
@@ -96,7 +105,7 @@
 </main>
 
   <!-- FOOTER SECTION -->
-  <footer>
+  <div id=footer>
     <div>
       <h2>Let's talk</h2>
     </div>
