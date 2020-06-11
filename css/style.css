@@ -27,6 +27,15 @@
 }
 /* large devices (1024px or larger) */
 @media only screen and (min-width: 1024px){
+    body {
+      font-size: 22px;
+    }
+    .col-lg-7 {
+      width: 60%;
+    }
+    .col-lg-5 {
+      width:40%;
+    }
 }
 
 /* x-large devices (1440px or larger) */
@@ -36,6 +45,11 @@
 @media only screen and (min-width: 1920px){
 
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/*Layout Style*/
 
 .container {
   padding: 0 15px;
@@ -43,7 +57,20 @@
   margin-left: auto;
   margin-right: auto;
 }
-* {
+}
+.center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.skills {
+  display: inline-table;
+}
+
+* {å
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -59,7 +86,7 @@ body {
 }
 
 main {
-  padding-top:133px;
+  padding-top:130px;
 }
 h1, h2, h3 {
   line-height: 1.4;
@@ -72,18 +99,21 @@ h1 {
   color: #025159;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 700;
   color: #025159;
 
 }
 h3, h4 {
   font-family: 'Comfortaa', cursive;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #03A696;
 }
 
+[class*="col-"] {
+  float:left;
+}
 #header {
   background-color: white;
   padding-top: 10px;
@@ -95,7 +125,7 @@ h3, h4 {
 }
 #header-logo {
   width: 50%;
-  max-width: 250px;
+  max-width: 150px;
   float: left;
   padding: 0;
 }
@@ -104,7 +134,7 @@ selector {
 }
 #header-intro {
   background-color: white;
-  color: #F28705;
+  color: #A9A9A9;
   text-align: center;
   padding: 30px;
   width: 100%;
@@ -112,7 +142,7 @@ selector {
 #main {
   clear: both;
   color: #A9A9A9;
-  text-align: left;
+  text-align: center;
   padding-right: 5%;
   padding-left: 5%;
   margin: 0 auto;
@@ -125,6 +155,8 @@ selector {
 }
 #skills {
   padding:0;
+  display: inline-grid;
+  text-align: left;
 }
 #footer {
   clear: both;
@@ -145,12 +177,12 @@ selector {
 
 img{
   width: auto;
-  max-width:1000px;
+  max-width:100%;
   height: auto;
   max-height: 1000px;
 }
 a {
-  color: white;
+  color: #4a4a4a;
   text-decoration: none;
 }
 a:hover {
@@ -165,7 +197,9 @@ a:active { /* selected link */
 }
 .row {
   margin: 25px 0;
+  display: inline-block;
 }
+
 .button {
   display: inline-block;
   background-color: #03A696;
@@ -190,6 +224,8 @@ a:active { /* selected link */
   background-color: #F25D27;
   color: #ffffff !important;
 }
+/* navigation */
+
 nav > ul {
   list-style-type: none;
   padding: 0;
