@@ -12,42 +12,104 @@
   Heading - Sourse Sans Pro
   Subtitle - Comfortaa
   Body - Enriqueta */
-/* Layout styling */
-/* medium devices (640px and larger) */
-@media only screen and (min-width: 640px){
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+
+  html {
+    scroll-behavior: smooth;
   }
-  nav {
+
+  body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color:#4a4a4a;
+    padding: 5px;
+  }
+
+  img{
     width: auto;
-    float: right;
-    margin-top: 4px;
+    max-width:100%;
+    height: auto;
   }
-}
-/* large devices (1024px or larger) */
-@media only screen and (min-width: 1024px){
-    body {
-      font-size: 22px;
-    }
-    .col-lg-7 {
-      width: 60%;
-    }
-    .col-lg-5 {
-      width:40%;
-    }
-}
 
-/* x-large devices (1440px or larger) */
-@media only screen and (min-width: 1440px){
-}
-/* xx-large devices (1920px or larger) */
-@media only screen and (min-width: 1920px){
+  h1, h2, h3 {
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+    color: #025159;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #025159;
 
+  }
+  h3, h4 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #03A696;
+  }
+
+  /* navigation */
+
+    .navtoggle,
+  .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right:0;
 }
-html {
-  scroll-behavior: smooth;
-}
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #dbdbdb;
+  }
 
 /*Layout Style*/
 
@@ -75,45 +137,15 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color:#4a4a4a;
-  padding: 5px;
-}
 
 main {
-  padding-top:130px;
-}
-h1, h2, h3 {
-  line-height: 1.4;
-  margin: 0;
-  font-weight: 600;
-}
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  color: #025159;
-}
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-  color: #025159;
-
-}
-h3, h4 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 20px;
-  font-weight: 400;
-  color: #03A696;
+  padding-top: 56px;
 }
 
 [class*="col-"] {
   float:left;
 }
+
 #header {
   background-color: white;
   padding-top: 10px;
@@ -123,15 +155,18 @@ h3, h4 {
   margin: 10px;
   border-bottom: 3px solid white;
 }
-#header-logo {
-  width: 50%;
-  max-width: 150px;
+
+.logo {
+  max-width: 50px;
+  position: absolute;
   float: left;
   padding: 0;
 }
+
 selector {
   margin: 0 auto;
 }
+
 #header-intro {
   background-color: white;
   color: #A9A9A9;
@@ -139,6 +174,7 @@ selector {
   padding: 30px;
   width: 100%;
 }
+
 #main {
   clear: both;
   color: #A9A9A9;
@@ -147,17 +183,20 @@ selector {
   padding-left: 5%;
   margin: 0 auto;
 }
+
 #main .img-responsive {
   display: block;
-  width: 100%;
+  width: 10%;
   margin-left: auto;
   margin-right: auto;
 }
+
 #skills {
   padding:0;
   display: inline-grid;
   text-align: left;
 }
+
 #footer {
   clear: both;
   float: bottom;
@@ -175,12 +214,6 @@ selector {
   position: relative;
 }
 
-img{
-  width: auto;
-  max-width:100%;
-  height: auto;
-  max-height: 1000px;
-}
 a {
   color: #4a4a4a;
   text-decoration: none;
@@ -210,47 +243,106 @@ a:active { /* selected link */
   border-bottom: 2px solid #026e63;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #025159 !important;
   text-transform: uppercase;
   border: 2px solid #013c42;
 }
+
 .button.contact:hover {
   background-color: #F25D27;
   color: #ffffff !important;
 }
-/* navigation */
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
+/* media sizes */
+
+/* medium devices (640px and larger) */
+@media only screen and (min-width: 641px){
+  .row::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+  header {
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .nav-container {
+     max-width: 500px;
+     margin: 0 auto;
+   }
+   .navtoggle li:not(:last-child) {
+   display: none;
+   }
+   .navtoggle li:not(:last-child) {
+    display: inline-block;
+   }
+   .navtoggle li:last-child {
+    display: none;
+   }
 }
-nav > ul > li {
-  display: inline-block;
+/* large devices (1024px or larger) */
+@media only screen and (min-width: 1024px){
+  .row::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+        header {
+      text-align: unset;
+    }
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    body {
+      font-size: 22px;
+    }
+    .col-lg-7 {
+      width: 60%;
+    }
+    .col-lg-5 {
+      width:40%;
+    }
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+
+/* x-large devices (1440px or larger) */
+@media only screen and (min-width: 1440px){
+  .row::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+    .nav-container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ header {
+  text-align: unset;
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+
 }
-nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #dbdbdb;
+
+/* xx-large devices (1920px or larger) */
+@media only screen and (min-width: 1920px){
+
 }
+
+/* animation */
+
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}

@@ -19,7 +19,9 @@
   <div id="header">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-      <img src="img/heather/hg.jpg" alt="Heather Gong Logo" class="img-responsive">
+      <div class="logo">
+        <img src="img/heather/hg.jpg" alt="Heather Gong Logo" class="img-responsive">
+      </div>
     <nav>
       <ul>
         <li><a href="index.html">Work</a></li>
@@ -27,6 +29,8 @@
         <li><a href="adventuredine.html">AdventureDine</a></li>
         <li><a href="duovocab.html">DuoVocab</a></li>
         <li><a href="#contact" onclick="menuContactToggle()">Contact</a>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+
         </li>
       </ul>
     </nav>
@@ -72,15 +76,15 @@
             </div>
           </div>
             <!-- WORK SECTION DUOVOCAB -->
-              <div class="row">
+            <div class="row">
               <div class="column col-md-6 col-lg-7">
-                  <h3>DuoVocab</h3>
                     <picture>
                       <source media="(max-width:767px)" srcset="img/project_duovocab/duovocab@140.jpg">
                       <img src="img/project_duovocab/duovocab@400.jpg" alt="DuoVocab Image" class="img">
                     </picture>
                   </div>
                   <div class="column col-md-6 col-lg-5">
+                      <h3>DuoVocab</h3>
                       <p>The context of this project was to analyze the experience of memorizing and understanding new concepts, techniques, and terms by researching and designing an app to learn new vocabulary.</p>
                       <p>Tools used: Sketch, AdobeXD, Prott</p>
                       <a href="duovocab.html" class="button">Read more</a><br>
