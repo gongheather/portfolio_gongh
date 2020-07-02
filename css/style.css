@@ -198,7 +198,7 @@ selector {
 
 #main {
   clear: both;
-  color: #A9A9A9; 
+  color: #A9A9A9;
   text-align: left;
   padding-right: 5%;
   padding-left: 5%;
@@ -285,7 +285,7 @@ a:active { /* selected link */
 /* media sizes */
 
 /* medium devices (640px and larger) */
-@media only screen and (min-width: 641px){
+@media only screen and (min-width: 680px){
   .row::after {
       content: '';
       clear: both;
